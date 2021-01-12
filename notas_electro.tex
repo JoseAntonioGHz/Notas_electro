@@ -1118,7 +1118,20 @@ If $t>0$ we use Cauchy's theorem with a countour as in figure ...
 Then we get
 
 \begin{equation}
-	G(\vec{r},t) = -4\pi c^2 \int \frac{d^3k} {(2\pi)^3}\ e^{i\vec{k}\cdot\vec{r}} \frac{-2\pi i}{2\pi}\left[\frac{e^{-ikct}}{2kc}+ \frac{e^{ikct}}{-2kc}\right]
+	G(\vec{r},t) = -4\pi c^2 \int \frac{d^3k} {(2\pi)^3}\ e^{i\vec{k}\cdot\vec{r}} \frac{-2\pi i}{2\pi}\left[\frac{e^{-ikct}}{2kc}+ \frac{e^{ikct}}{-2kc}\right] = 4\pi c^2 \int \frac{d^3k}{(2\pi)^3}e^{i\vec{k}\cdot \vec{r}}\frac{\sin (kct)}{k}
 \end{equation}
-	
+Integrating over $k$ using spherical coordinates, and considering times $t>0$ we finally get
+\begin{equation}
+	G(\vec{r},t) = \frac{c}{r} \delta (r-ct) = \frac{1}{r} \delta (t-\frac{r}{c})
+\end{equation}
+Returning to the prevoius notation $t \to t-t'$ and $\vec{r}\to \vec{r} - \vec{r}\,'$
+\begin{equation}
+	G(\vec{r}-\vec{r}\,',t-t') = \frac{1}{|\vec{r}-\vec{r}\,'|} \delta (t-t_r)
+\end{equation}
+where $t_r = t-\frac{|\vec{r}-\vec{r}\,'|}{c}$ is the time light takes going from the source to the point of observation. The solution for the potentials in Lorenz gauge is then
+
+\begin{eqnarray}
+	\varphi(\vec{r},t) & = & \integral{}{}{^3r'} \frac{\rho (\vec{r}\,',t_r)}{|\vec{r} - \vec{r}\,'|} \\
+	\vec{A}(\vec{r},t) & = &\frac{1}{c} \integral{}{}{^3r'} \frac{\vec{j} (\vec{r}\,',t_r)}{|\vec{r} - \vec{r}\,'|}
+\end{eqnarray}
 \end{document}
