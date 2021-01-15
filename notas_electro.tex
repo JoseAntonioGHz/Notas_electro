@@ -25,7 +25,9 @@
 \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % partial derivative
 \newcommand{\integral}[3]{\int_{#1}^{#2} d #3 \ } % integral	
 
+% Text
 \newcommand{\tr}{\text{tr}}
+\newcommand{\re}{\text{Re}}
 
 \makeatletter
 \def\overUnderArrow{\@ifnextchar[\overUnderArrow@i{\overUnderArrow@i[]}}
@@ -1144,9 +1146,47 @@ Consider a plane wave with intensity $I_i$ [Power/Area] hits a molecule. The mol
 \textbf{Mean free path}\\
 
 \textbf{Why the sky is blue?}\\
-Supppose a molecule of the atmosphere is hit by monochromatic light from the sun with intensity $I=\frac{c}{8\pi}|E|^2$. This molecule will polarize in the direction of the electric field $\vec{p}=\alpha \vec{E}$. This will lead the molecule to oscillate with a frequency equal to the incident light $\omega$ and it will lose energy
+Supppose a molecule of the atmosphere is hit by monochromatic light from the sun with intensity $I=\frac{c}{8\pi}|E|^2$. This molecule will polarize in the direction of the electric field $\vec{p}=\alpha \vec{E}$. This will lead the molecule to oscillate with a frequency $\omega$ equal to frequency of the incident light. Therefore it will lose energy
 \begin{equation}
 	P = \frac{\omega^4}{3c^3}|p|^2 = \frac{\omega^4}{3c^3} |\alpha|^2 |E|^2
+\end{equation}
+
+\textbf{Antenna}\\
+Consider a current source $I(t) = I_0 \cos (\omega t)$ conected to two metal rods of length $L/2$ as in figure ... to form an antenna. Let $I(z,t)$ be the current in the antenna. The current between the two rods at $z = 0$ is equal to the current from the source, and at $z=\pm L/2$ is zero since there the wires end
+\begin{equation}
+	I(0,t) = I(t) = I_0 \cos(\omega t), \ \ \  I(\pm L/2,t) = 0
+\end{equation}
+We make an ansazts of the form of the current that satisfies this behaviour
+\begin{equation}
+	I(z,t) = I_0\cos(\omega t) \cos\left(\pi \frac{z}{L}\right)
+\end{equation}
+This form of $I$ tells us that at fixed time the lower part, at $z<0$, of the antenna has the opposite charge of the upper half, at $z>0$, so it forms a dipole in one dimension
+\begin{equation}
+	p_z(t) = \integral{}{}{z} \lambda (z,t) z
+\end{equation}
+where $\lambda (z,t)$ is the charge density in one dimension, which satisfy the continuity equation in one dimension
+\begin{equation}
+	\pd{\lambda}{t}+\pd{I}{z} = 0
+\end{equation}
+so $\lambda (z,t) = \frac{\pi I_0}{\omega L}\sin(\omega t)\sin(\frac{\pi}{L}z)$. Therefore the instantaneous electric dipole moment is
+\begin{equation}
+	p_z(t) = \frac{2I_0L}{\omega\pi}\sin(\omega t) = \re (p_z e^{i\omega t})
+\end{equation}
+so the amplitude of the dipole is $p_z = \frac{2I_0L}{\omega\pi}i$. And
+\begin{equation}
+	\vec{p} = \frac{2I_0L}{\omega\pi}i(0,0,1)
+\end{equation}
+This vector and not the instantaneous is what we need to replace in Larmor's formula to get the power loss
+\begin{equation}
+	P = \frac{\omega^4}{3c^3}|\vec{p}\,|^2 = \frac{4\omega^2L^2}{3c^3\pi^2}I_0^2
+\end{equation}
+assuming of course $\lambda\gg L$. In an oscillating electrical circuit the power loss is
+\begin{equation}
+	P = \langle V I \rangle = \langle R I^2(t)\rangle = \frac{1}{2}R I_0^2
+\end{equation}
+So, in the perspective of an electrical circuit we can describe the antenna as a resistor with resistance 
+\begin{equation}
+R_{\text{rad}} = \frac{8\omega^2L^2}{3\pi^2c^3}
 \end{equation}
 
 \end{document}
