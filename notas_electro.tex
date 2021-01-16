@@ -390,7 +390,25 @@ the superposition of two Laplacians for Coloumbian potentials produced by $q$ an
 \begin{equation}
 	\nabla ^{2}\psi(x,y,z>0)=-4\pi q\delta(\vec{r}-\vec{r}_{0}),
 \end{equation}
-then \eqref{potentialforgraondedplane} obeys the Poison equation, the differential equation for the system and the boundary condition $\psi(x,y,0)=0$.
+so this potential \eqref{potentialforgraondedplane} given by a real charge and the imaginary one obeys the Poison equation, the differential equation for the system and the boundary condition $\psi(x,y,0)=0$.
+
+Interpreting the potential as the Dirichlet Green's function $\psi(\vec{r})\rightarrow G_{D}(\vec{r},\vec{r}')$, implies that field variables becomes, $\vec{r}_{0}\rightarrow\vec{r}$, $\vec{r}\rightarrow\vec{r}'$ $q\rightarrow1$. 
+
+So Dirichlet function for an infinite plane is
+\begin{equation}
+G_{D}(\vec{r},\vec{r}')=\frac{1}{((x'-x)^{2}+(y'-y)^{2}+(z'-z)^{2})^{\frac{1}{2}}}-\frac{1}{((x'-x)^{2}+(y'-y)^{2}+(z'+z)^{2})^{\frac{1}{2}}},
+\end{equation}
+using this function, any electrostatic problem with charges above a plane and boundary condition in the plane is solved.
+
+If a charge density and the potential in the plane are given
+\begin{equation}
+	\label{Dirichletinformation}
+\begin{array}{cc}
+\rho (\vec{r}) & z>0, \\
+\psi (x,y,0)=F(x,y) & z=0,
+\end{array}
+\end{equation}
+the electric potential over all space can be obtained substituting \eqref{Dirichletinformation} in \eqref{PotentialfromDirichletfunction}.
 
 \textbf{Green's function in spherical coordinates}\\
 \begin{equation}
