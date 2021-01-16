@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.21)  16 JAN 2021 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.21)  16 JAN 2021 00:21
 entering extended mode
 **./notas_electro.tex
 (notas_electro.tex
@@ -528,20 +528,20 @@ Package: xparse 2020-10-27 L3 Experimental document command parser
 (notas_electro.aux)
 \openout1 = `notas_electro.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
 
 ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -597,12 +597,17 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
 
 
 ("C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd"
@@ -610,73 +615,73 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/Merlyn/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 134--134
+Underfull \hbox (badness 10000) in paragraph at lines 135--135
 []\OT1/cmr/m/n/12 Faraday's
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 []\OT1/cmr/m/n/12 Ampere's
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 142--144
+Underfull \hbox (badness 1910) in paragraph at lines 143--145
 \OT1/cmr/m/n/12 curve $\OML/cmm/m/it/12 C$ \OT1/cmr/m/n/12 bor-der-ing a sur-fa
 ce $\OML/cmm/m/it/12 S$
  []
 
 
-Overfull \hbox (35.99307pt too wide) in paragraph at lines 120--146
+Overfull \hbox (35.99307pt too wide) in paragraph at lines 121--147
  [] 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--265
+Underfull \hbox (badness 10000) in paragraph at lines 264--266
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--274
+Underfull \hbox (badness 10000) in paragraph at lines 273--275
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 276--278
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
  []
 
@@ -684,101 +689,101 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--312
 <figs/planeforimagemethod.png, id=34, 200.15956pt x 158.35632pt>
 File: figs/planeforimagemethod.png Graphic file (type png)
 <use figs/planeforimagemethod.png>
-Package pdftex.def Info: figs/planeforimagemethod.png  used on input line 361.
+Package pdftex.def Info: figs/planeforimagemethod.png  used on input line 362.
 (pdftex.def)             Requested size: 181.18439pt x 143.34573pt.
-<figs/Imagemethod.png, id=36, 127.55655pt x 91.0602pt>
+<figs/Imagemethod.png, id=36, 160.80075pt x 83.1105pt>
 File: figs/Imagemethod.png Graphic file (type png)
 <use figs/Imagemethod.png>
-Package pdftex.def Info: figs/Imagemethod.png  used on input line 371.
-(pdftex.def)             Requested size: 181.18439pt x 129.35222pt.
- [6]
-Overfull \hbox (10.8062pt too wide) detected at line 383
+Package pdftex.def Info: figs/Imagemethod.png  used on input line 372.
+(pdftex.def)             Requested size: 271.7835pt x 140.48827pt.
+ [6] [7 <./figs/planeforimagemethod.png> <./figs/Imagemethod.png>]
+Overfull \hbox (10.8062pt too wide) detected at line 384
 \OML/cmm/m/it/12  \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; y; z > \OT1/cmr/m/n/12 0
 ) = [] \OMS/cmsy/m/n/12   []\OML/cmm/m/it/12 ;
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
-
- []
-
-[7 <./figs/planeforimagemethod.png> <./figs/Imagemethod.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 411--413
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--430
+Underfull \hbox (badness 10000) in paragraph at lines 412--414
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--432
+Underfull \hbox (badness 10000) in paragraph at lines 429--431
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--440
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 442--444
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 539--540
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
+Underfull \hbox (badness 10000) in paragraph at lines 443--445
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--553
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 555--557
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 559--561
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 564--565
+Underfull \hbox (badness 10000) in paragraph at lines 549--550
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 552--554
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--562
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
 
  []
 
 [11] [12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 779--780
+Underfull \hbox (badness 10000) in paragraph at lines 780--781
 
  []
 
-
-Overfull \hbox (0.3242pt too wide) in paragraph at lines 813--815
+[15]
+Overfull \hbox (0.3242pt too wide) in paragraph at lines 814--816
 \OT1/cmr/m/n/12 \OML/cmm/m/it/12 x$ \OT1/cmr/m/n/12 which have a ca-pac-i-tanc
 e $\OML/cmm/m/it/12 C \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x=\OT1/cmr/m/n/12 (2 
 [](\OML/cmm/m/it/12 b=a\OT1/cmr/m/n/12 ))$ and in-duc-tance $\OML/cmm/m/it/12 L
@@ -786,43 +791,39 @@ e $\OML/cmm/m/it/12 C \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x=\OT1/cmr/m/n/12 (2
 =c[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 x$\OT1/cmr/m/n/12 .
  []
 
-[15] [16] [17] [18]
-Overfull \hbox (18.41408pt too wide) in paragraph at lines 1007--1010
+[16] [17] [18]
+Overfull \hbox (18.41408pt too wide) in paragraph at lines 1008--1011
 [][] 
  []
 
-[19] [20] [21] [22]
-Underfull \hbox (badness 10000) in paragraph at lines 1186--1187
-
- []
-
-[23] [24] (notas_electro.aux) ) 
+[19] [20] [21] [22] [23] (notas_electro.aux) ) 
 Here is how much of TeX's memory you used:
- 28171 strings out of 479697
- 697349 string characters out of 2877005
- 1140239 words of memory out of 3000000
- 44947 multiletter control sequences out of 15000+200000
+ 28170 strings out of 479697
+ 697347 string characters out of 2877005
+ 1140232 words of memory out of 3000000
+ 44946 multiletter control sequences out of 15000+200000
  412508 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,14n,85p,978b,1013s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx
-ti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
-/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fil
-es/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fi
-les/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb
-><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Pr
-ogram Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on notas_electro.pdf (24 pages, 312593 bytes).
+<C:/Program Files/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program 
+Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
+iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/ms
+bm10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb
+>
+Output written on notas_electro.pdf (23 pages, 307575 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
+ 152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
