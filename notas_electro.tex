@@ -327,9 +327,11 @@ Let $G(\vec{r},\vec{r}\,')$ be such that
 	& & + \integral{V}{}{^3r'} G(\vec{r},\vec{r}\,') \rho(\vec{r}\,')
 \end{eqnarray}
 
-\textbf{Dirichlet Green's Function}\\
+\textbf{Dirichlet Green's Function}
+
 If we have Dirichlet's boundary conditions then 
 \begin{equation}
+	\label{PotentialfromDirichletfunction}
 	\varphi(\vec{r}) = \integral{V}{}{^3r'}G_D(\vec{r},\vec{r}\,') \rho(\vec{r}) -\frac{1}{4\pi} \integral{\partial V}{}{a}  \varphi(\vec{r}\,')\partial_{n'}G_D(\vec{r},\vec{r}\,')
 \end{equation}
 \textbf{Neumann Green's Function}\\
@@ -347,10 +349,48 @@ where $A$ is the area of the region. And finally
 \end{equation}
 where $\langle \varphi \rangle_A = \frac{1}{A}\integral{\partial V}{}{a'} \varphi(\vec{r}\,')$ is the average of $\varphi$ over the surface.
 
-\textbf{Green's function in Quantum Mechanics}\\
+\textbf{Green's function in Quantum Mechanics}
 
-\textbf{Method of images}\\
+\textbf{Method of images}
 
+Consider a system composed by an infinite plane whose electric potential is known and given by a function $f(\vec{r})$ for $\vec{r}$ in the plane, but is unknown everywhere else.
+
+If the plane is on $z=0$ as shown in image \ref{planeforimagemethod}, the question is, what is the electric potential for $z>0$? guessing there are some distributed charges upon it.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\textwidth]{figs/planeforimagemethod.png}
+	\caption{Plane at $\psi(\vec{r})$}
+	\label{planeforimagemethod}
+\end{figure}
+
+This problem is solved finding the Dirichlet function and using it in \eqref{PotentialfromDirichletfunction}, but how to compute Dirichlet Green's function?, finding a potential produced by a charge placed upon the plane, with Dirichlet boundary conditions in the plane, this is $G_{D}(x,y,z=0)=0$.
+
+This problem is exactly the same one that the system shown in \ref{Imagemethod},
+ \begin{figure}
+ 	\centering
+ 	\includegraphics[width=0.4\textwidth]{figs/Imagemethod.png}
+ 	\caption{An electrical charge q upon a metallic plane at $\psi(x,y,z=0)=0$ electric potential}
+ 	\label{Imagemethod}
+ \end{figure}
+ which is solved with images method. 
+ 
+The initial situation is a grounded metallic surface whit an electric charge above it, then by the images method we have to put an image charge $q_{i}$ under the plane at the same distance from it than the real one, and with the same charge but with opposed sign, then the potential for $z>0$ is,
+\begin{equation}
+	\label{potentialforgraondedplane}
+	\psi(\vec{r})=\frac{q}{||\vec{r}-\vec{r}_{0}||}-\frac{q}{||\vec{r}-\vec{r}_{i}||},
+\end{equation}
+donde $\vec{r}_{i}=(x_{0},y_{0},-z_{0})$,
+\[\psi(x,y,z>0)=\frac{q}{((x-x_{0})^{2}+(y-y_{0})^{2}+(z-z_{0})^{2})^{\frac{1}{2}}}-\frac{q}{((x-x_{0})^{2}+(y-y_{0})^{2}+(z+z_{0})^{2})^{\frac{1}{2}}},\]
+then it's Laplacian is 
+\begin{equation}
+\nabla ^{2}\psi(\vec{r})=-4\pi q\delta(\vec{r}-\vec{r}_{0})+4\pi q\delta(\vec{r}-\vec{r}_{i}),
+\end{equation}
+the superposition of two Laplacians for Coloumbian potentials produced by $q$ and $q_{i}$ images. The interest region is $z>0$ then the second term in the right side is zero.
+\begin{equation}
+	\nabla ^{2}\psi(x,y,z>0)=-4\pi q\delta(\vec{r}-\vec{r}_{0}),
+\end{equation}
+then \eqref{potentialforgraondedplane} obeys the Poison equation, the differential equation for the system and the boundary condition $\psi(x,y,0)=0$.
 
 \textbf{Green's function in spherical coordinates}\\
 \begin{equation}
