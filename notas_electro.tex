@@ -23,7 +23,7 @@
 \newcommand{\dt}[1]{\frac{d #1}{dt}} % derivative wrt t
 \newcommand{\der}[2]{\frac{d #1}{d #2}} % derivative
 \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % partial derivative
-\newcommand{\integral}[3]{\int_{#1}^{#2} d #3 \ } % integral	
+\newcommand{\integral}[3]{\int_{#1}^{#2} d #3 \ } % integral
 
 % Text
 \newcommand{\tr}{\text{tr}}
@@ -52,11 +52,11 @@ Local transformation that leaves the Lagrangian/Hamiltonian unchaged.
 Schrödinger equation is invariant under global transformations of the wave function
 \begin{equation}
 	\psi \rightarrow \psi'=e^{i\theta}\psi
-\end{equation} 
+\end{equation}
 Electrodynamics can be derived from a gauge transformation of the wave function
 \begin{equation}
 	\psi \rightarrow \psi'=e^{i\theta(t,x)}\psi
-\end{equation} 
+\end{equation}
 we write
 \begin{equation}
 	\theta(t,x) \equiv \frac{q}{\hbar c}\Lambda(t,x)
@@ -117,39 +117,39 @@ where $u = \frac{E^2+B^2}{8\pi}$ is the e-m energy density  and $\vec{S}=\frac{c
 	\nabla \times \vec{B} & = &\frac{4\pi}{c}\vec{j} +\frac{1}{c}\frac{\partial \vec{E}}{\partial t}
 \end{eqnarray}
 \begin{center}
-\begin{tabular}{ | p{0.15\textwidth} | p{0.45\textwidth}| p{.4\textwidth} | } 
-\hline 
+\begin{tabular}{ | p{0.15\textwidth} | p{0.45\textwidth}| p{.4\textwidth} | }
+\hline
 Gauss's law & \begin{equation}
 \integral{\partial V}{}{\vec{a}\cdot \vec{E}} = 4\pi\integral{V}{}{^3r} \rho
 \end{equation} &  \begin{center}
 The flux of $\vec{E}$ through a closed surface equals the enclosed charge.
-\end{center} \\ 
-\hline 
+\end{center} \\
+\hline
 -- & \begin{equation}
 \integral{\partial V}{}{\vec{a}\cdot \vec{B}} = 0
 \end{equation} & \begin{center}
 	Magnetic charges are absent.
-\end{center}  \\ 
-\hline 
+\end{center}  \\
+\hline
 Faraday's law & \begin{equation}
 \oint_C d\vec{r} \cdot \vec{E} = -\int_S d\vec{a} \cdot \frac{1}{c}\pd{\vec{B}}{t}
 \end{equation} & \begin{center}
 A varying magnetic flux generates an electromotive force.
-\end{center} \\ 
-\hline 
+\end{center} \\
+\hline
 Ampere's law & \begin{equation}
-\oint_C d\vec{r} \cdot \vec{B} = \int_S d\vec{a}\cdot\left( \frac{4\pi}{c}\vec{j}+\frac{1}{c}\pd{\vec{E}}{t} \right) 
+\oint_C d\vec{r} \cdot \vec{B} = \int_S d\vec{a}\cdot\left( \frac{4\pi}{c}\vec{j}+\frac{1}{c}\pd{\vec{E}}{t} \right)
 \end{equation}  & The circulation of $\vec{B}$
- along a closed curve $C$ bordering a surface $S$ equals the flux thorugh $S$ the sum of hte usual current plus Maxwell's displacement current $\frac{1}{c}\pd{\vec{E}}{t} $. \\ 
-\hline 
-\end{tabular} 
+ along a closed curve $C$ bordering a surface $S$ equals the flux thorugh $S$ the sum of hte usual current plus Maxwell's displacement current $\frac{1}{c}\pd{\vec{E}}{t} $. \\
+\hline
+\end{tabular}
 
 \end{center}
 \textbf{Helmohltz Theorem}
 
 \textbf{Equations for the potentials}
 \begin{eqnarray}
-	\nabla^2 \varphi + \frac{1}{c}\frac{\partial}{\partial t}\nabla\cdot \vec{A} & = & -4\pi\rho \\	
+	\nabla^2 \varphi + \frac{1}{c}\frac{\partial}{\partial t}\nabla\cdot \vec{A} & = & -4\pi\rho \\
 	\nabla^2\vec{A} - \nabla \left( \nabla\cdot \vec{A}+ \frac{1}{c}\frac{\partial \varphi}{\partial t}\right)-\frac{1}{c^2}\frac{\partial^2  \vec{A}}{\partial t^2} & = & -\frac{4\pi}{c}\vec{j}
 \end{eqnarray}
 \textbf{Gauge Fixing}
@@ -162,15 +162,15 @@ Ampere's law & \begin{equation}
 
 Using the Lorenz gauge
 \begin{eqnarray}
-\nabla^2 \varphi - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\varphi & = & -4\pi\rho \\	
+\nabla^2 \varphi - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}\varphi & = & -4\pi\rho \\
 	\nabla^2\vec{A}-\frac{1}{c^2}\frac{\partial^2  \vec{A}}{\partial t^2} & = & -\frac{4\pi}{c}\vec{j}
-\end{eqnarray} 
+\end{eqnarray}
 
 Using the Coulomb gauge
 \begin{eqnarray}
-\nabla^2 \varphi  & = & -4\pi\rho \\	
+\nabla^2 \varphi  & = & -4\pi\rho \\
 	\nabla^2\vec{A}-\frac{1}{c^2}\frac{\partial^2  \vec{A}}{\partial t^2} & = & -\frac{4\pi}{c}\vec{j}_{\rm  T}
-\end{eqnarray} 
+\end{eqnarray}
 
 In Coulomb's gauge and applying the fourier transform in the spatial derivatives
 \begin{equation}
@@ -217,7 +217,7 @@ where
 \begin{equation}
 \Lambda_1 - \Lambda_2 = \oint d \vec{l} \cdot \vec{A} = \int d\vec{a} \ \nabla \times \vec{A} = \Phi_B
 \end{equation}
-The shift in the fringe pattern i a double slit experiment in a region where $\vec{B} = 0$ is called the \textit{Aharonov-Bohm effect}. 
+The shift in the fringe pattern i a double slit experiment in a region where $\vec{B} = 0$ is called the \textit{Aharonov-Bohm effect}.
 
 \begin{figure}[h]
 	\centering
@@ -226,29 +226,29 @@ The shift in the fringe pattern i a double slit experiment in a region where $\v
 		\draw (0,0)--(0,0.5);
 		\draw (0,1)--(0,2);
 		\draw (0,-0.5)--(0,-1.5);
-		
+
 		% solenoid
 		\draw (0.5,0.25) circle(0.25);
-		
+
 		%screen
 		\draw (4,2) -- (4,-1.5);
-		
-		
+
+
 		%source
 		\draw[fill] (-3,0.25) node[below] {I} circle(0.1);
-		
+
 		%rays
 		\draw (-3,0.25) -- (0,0.9)--(4,0.6) node [above left] {F};
 		\draw (-3,0.25) -- (0,-0.4)--(4,0.6);
 
-		%PATHS NAMES		
-		\draw (-1,-0.5) node[] {$\mathcal{L}_1$};		
+		%PATHS NAMES
+		\draw (-1,-0.5) node[] {$\mathcal{L}_1$};
 		\draw (-1.5,1) node[] {$\mathcal{L}_2$};
-		
+
 		%B values
 		\draw (2,-1) node[] {$\vec{B} = 0$};
 		\draw[latex-] (0.5,0.25)--(2,1.5) node[right] {$\vec{B} \neq 0$};
-		
+
 		%Intensity of fringes
 		\draw[domain=-1.5:2, smooth, variable=\y, red,dashed]  plot ({sin(\y*400)+5}, {\y});
 		\draw[domain=-1.5:2, smooth, variable=\y, blue,line width = 1.2]  plot ({sin(\y*400 + 100)+5}, {\y});
@@ -257,7 +257,8 @@ The shift in the fringe pattern i a double slit experiment in a region where $\v
 \end{figure}
 
 \section{Electrostatics}
-\textbf{Electric Field of a point charge}\\
+\textbf{Electric Field of a point charge}
+
 \begin{equation}
 	\vec{E}(\vec{r}\ ) = \frac{q}{r^3}\vec{r}
 \end{equation}
@@ -268,18 +269,18 @@ The shift in the fringe pattern i a double slit experiment in a region where $\v
 
 \textbf{Work to move a charge against $\vec{E}$}\\
 \begin{equation}
-	W = -q \int_{C'}d\vec{l} \cdot\vec{E}(\vec{r}\ ) 
+	W = -q \int_{C'}d\vec{l} \cdot\vec{E}(\vec{r}\ )
 \end{equation}
 \textbf{Potential of a point charge due to $\vec{E}$}\\
 \begin{equation}
-	\varphi (\vec{r}\ ) = - \int_{\vec{O}}^{\vec{r}} d\vec{l} \cdot\vec{E}(\vec{r}\ ) 
+	\varphi (\vec{r}\ ) = - \int_{\vec{O}}^{\vec{r}} d\vec{l} \cdot\vec{E}(\vec{r}\ )
 \end{equation}
 \textbf{Charged cylinder}\\
 
 \textbf{Charged plane}\\
-Consider a square plane of length $a$ with a charge $q$, then its superficial charge density is $\sigma = \frac{q}{a^2}$ 
+Consider a square plane of length $a$ with a charge $q$, then its superficial charge density is $\sigma = \frac{q}{a^2}$
 
-\textbf{Charged plaque}\\ 
+\textbf{Charged plaque}\\
 
 \textbf{Capacitance and capacitors}\\
 The capacitance $C$ is the ability of a body to hold charge. And it is defined through
@@ -302,7 +303,7 @@ therefore $|\nabla \Psi|^2 = 0, \  \forall \vec{r} \in V  \Rightarrow \nabla \Ps
 \textit{Proof: }\\
 Suppose $\varphi_1$ and $\varphi_2$ are two different solutions of Laplace equation and $\partial_n\varphi_1 = \partial_n\varphi_2 =D$ in the boundary. Let $\Psi = \varphi_2-\varphi_1$, then $\nabla^2 \Psi = 0$  and  $\partial_n\Psi = 0$ in the boundary. Then
 \begin{equation}
-	\integral{V}{}{^3r} |\nabla \Psi|^2 = \integral{\partial V}{}{ \vec{a}} \cdot \Psi\nabla \Psi =\integral{\partial V}{}{a} \cdot (\hat{n}\nabla \Psi)\Psi =\integral{\partial V}{}{a} (\partial_n \Psi)\Psi = 0 
+	\integral{V}{}{^3r} |\nabla \Psi|^2 = \integral{\partial V}{}{ \vec{a}} \cdot \Psi\nabla \Psi =\integral{\partial V}{}{a} \cdot (\hat{n}\nabla \Psi)\Psi =\integral{\partial V}{}{a} (\partial_n \Psi)\Psi = 0
 \end{equation}
 therefore $\nabla \Psi = 0 \Rightarrow \Psi = \text{cte.}$  Thus $\varphi_2 = \varphi_1 + \text{cte.}$ QED.
 
@@ -328,7 +329,7 @@ Let $G(\vec{r},\vec{r}\,')$ be such that
 
 \textbf{Dirichlet Green's Function}
 
-If we have Dirichlet's boundary conditions then 
+If we have Dirichlet's boundary conditions then
 \begin{equation}
 	\label{PotentialfromDirichletfunction}
 	\varphi(\vec{r}) = \integral{V}{}{^3r'}G_D(\vec{r},\vec{r}\,') \rho(\vec{r}) -\frac{1}{4\pi} \integral{\partial V}{}{a}  \varphi(\vec{r}\,')\partial_{n'}G_D(\vec{r},\vec{r}\,')
@@ -372,8 +373,8 @@ This problem is exactly the same one that the system shown in \ref{Imagemethod},
  	\caption{An electrical charge q upon a metallic plane at $\psi(x,y,z=0)=0$ electric potential}
  	\label{Imagemethod}
  \end{figure}
- which is solved with images method. 
- 
+ which is solved with images method.
+
 The initial situation is a grounded metallic surface whit an electric charge above it, then by the images method we have to put an image charge $q_{i}$ under the plane at the same distance from it than the real one, and with the same charge but with opposed sign, then the potential for $z>0$ is,
 \begin{equation}
 	\label{potentialforgraondedplane}
@@ -381,7 +382,7 @@ The initial situation is a grounded metallic surface whit an electric charge abo
 \end{equation}
 donde $\vec{r}_{i}=(x_{0},y_{0},-z_{0})$,
 \[\psi(x,y,z>0)=\frac{q}{((x-x_{0})^{2}+(y-y_{0})^{2}+(z-z_{0})^{2})^{\frac{1}{2}}}-\frac{q}{((x-x_{0})^{2}+(y-y_{0})^{2}+(z+z_{0})^{2})^{\frac{1}{2}}},\]
-then it's Laplacian is 
+then it's Laplacian is
 \begin{equation}
 \nabla ^{2}\psi(\vec{r})=-4\pi q\delta(\vec{r}-\vec{r}_{0})+4\pi q\delta(\vec{r}-\vec{r}_{i}),
 \end{equation}
@@ -391,7 +392,7 @@ the superposition of two Laplacians for Coloumbian potentials produced by $q$ an
 \end{equation}
 so this potential \eqref{potentialforgraondedplane} given by a real charge and the imaginary one obeys the Poison equation, the differential equation for the system and the boundary condition $\psi(x,y,0)=0$.
 
-Interpreting the potential as the Dirichlet Green's function $\psi(\vec{r})\rightarrow G_{D}(\vec{r},\vec{r}')$, implies that field variables becomes, $\vec{r}_{0}\rightarrow\vec{r}$, $\vec{r}\rightarrow\vec{r}'$ $q\rightarrow1$. 
+Interpreting the potential as the Dirichlet Green's function $\psi(\vec{r})\rightarrow G_{D}(\vec{r},\vec{r}')$, implies that field variables becomes, $\vec{r}_{0}\rightarrow\vec{r}$, $\vec{r}\rightarrow\vec{r}'$ $q\rightarrow1$.
 
 So Dirichlet function for an infinite plane is
 \begin{equation}
@@ -434,11 +435,11 @@ Electric field
 \textbf{Polarization}\\
 We define the polarization $\vec{P}$ as the density of electric dipole moments in a continous system with volume $V$
 \begin{equation}
-	\vec{P} \equiv \frac{\Delta \vec{p}}{\Delta V} 
+	\vec{P} \equiv \frac{\Delta \vec{p}}{\Delta V}
 \end{equation}
 Let a tiny volume $\Delta V$ at $\vec{r}_0$ have a dipole moment $\Delta \vec{p}$ and a charge density $\Delta \rho^{\text{int}}$, then
 \begin{equation}
-	\Delta \rho^{\text{int}} = -\Delta \vec{p}  \cdot \nabla \delta (\vec{r} -\vec{r}_0) = - P(\vec{r}\,) \cdot \nabla \delta (\vec{r} -\vec{r}_0) 
+	\Delta \rho^{\text{int}} = -\Delta \vec{p}  \cdot \nabla \delta (\vec{r} -\vec{r}_0) = - P(\vec{r}\,) \cdot \nabla \delta (\vec{r} -\vec{r}_0)
 \end{equation}
 Integrating over the volume we get
 \begin{equation}
@@ -504,7 +505,7 @@ So we get a solution
 \end{equation}
 
 \textbf{Response}\\
-Consider a operator $\hat{B}$ subject to an inteaction $H_I$ defined as before. Then at  first approximation the expectation value of $\hat{B}$ is 
+Consider a operator $\hat{B}$ subject to an inteaction $H_I$ defined as before. Then at  first approximation the expectation value of $\hat{B}$ is
 \begin{eqnarray}
 	  \langle \hat{B}(t) \rangle^{(1)} & = & \text{tr}\left(\hat{\rho}^{(1)}(t                                                                                                                                                                                    )B(t)\right) \\
 	  & = & \frac{1}{i\hbar}\integral{-\infty}{t}{t'}\text{tr}\left(\hat{B}(t)[\hat{A}(t'),\hat{\rho}_0]\right)\varphi(t')
@@ -528,7 +529,7 @@ I we identufy $\hat{B} \rightarrow \hat{d}=-e\hat{r}$, then
  \begin{equation}
  	\alpha^{ij}(\tau) = -\frac{e^2}{i\hbar}\langle [\hat{r_I}^i(\tau),\hat{r_I}^j(0)]\rangle_0 \Theta(\tau)
  \end{equation}
-Applying fourier transform 
+Applying fourier transform
 \begin{equation}
 	d_{\omega}^i = \alpha_{\omega}^{ij} E_{\omega}^j
 \end{equation}
@@ -540,8 +541,8 @@ Applying fourier transform
 Consider an electron attached to a nucleus through a spring with spring constant $\kappa = m\omega_0$ and subject to an electric force $-e\vec{E}(t) $. Then the equation of motion is
 \begin{equation}
 	m\frac{d^2 \vec{r}}{dt^2} = - e\vec{E}(t)-m\omega_0^2\vec{r}
-\end{equation} 
-We write the electric field as $\vec{E}(t) = \text{Re} \ \vec{E}_0 e^{-i\omega t + \eta t}$. We look for solutions of the form $\vec{r}(t) = \text{Re} \  \vec{r}_0 e^{-i\tilde\omega t}$ where $\tilde{\omega} = \omega + i\eta$. Solving the equation of motion with this anzats we get 
+\end{equation}
+We write the electric field as $\vec{E}(t) = \text{Re} \ \vec{E}_0 e^{-i\omega t + \eta t}$. We look for solutions of the form $\vec{r}(t) = \text{Re} \  \vec{r}_0 e^{-i\tilde\omega t}$ where $\tilde{\omega} = \omega + i\eta$. Solving the equation of motion with this anzats we get
 \begin{equation}
 	\vec{r} = -\frac{e/m}{\omega_0^2 - \tilde{\omega}^2}\vec{E}
 \end{equation}
@@ -558,7 +559,7 @@ since $\vec{d} = \alpha \vec{E}$, then
 \begin{equation}
 	\alpha = \frac{e^2}{m}\sum_{ij} \frac{f_{ij}}{\omega_{ij}^2-\tilde{\omega}^2}
 \end{equation}
-where $f_{ij}$ is knwon as the oscilator force.
+where $f_{ij}$ is known as the oscillator force.
 \begin{equation}
 	f_{nm}^{ij} = \frac{2m}{\hbar}\rho_{nn}r_{nm}^ir_{mn}^j\omega_{mn} (1-\rho_m)
 \end{equation}
@@ -609,11 +610,11 @@ Magnetic field
 \textbf{Magnetization}\\
 We define the magnetization $\vec{M}$ as the density of dipole magnetic moments in a continous system with volume $V$
 \begin{equation}
-	\vec{M} \equiv \frac{\Delta \vec{m}}{\Delta V} 
+	\vec{M} \equiv \frac{\Delta \vec{m}}{\Delta V}
 \end{equation}
 Let a tiny volume $\Delta V$ at $\vec{r}_0$ have a dipole moment $\Delta \vec{m}$ and a current density $\Delta \vec{j}$, then
 \begin{equation}
-	\Delta \vec{j} = -c\Delta \vec{m}  \times \nabla \delta (\vec{r} -\vec{r}_0) = - c\vec{M}(\vec{r}\,) \times \nabla \delta (\vec{r} -\vec{r}_0) 
+	\Delta \vec{j} = -c\Delta \vec{m}  \times \nabla \delta (\vec{r} -\vec{r}_0) = - c\vec{M}(\vec{r}\,) \times \nabla \delta (\vec{r} -\vec{r}_0)
 \end{equation}
 Integrating over the volume we get
 \begin{equation}
@@ -630,11 +631,11 @@ We consider a current density around the origin enclosed in a volume $V$. From t
 \begin{equation}
 	\vec{F} = \frac{1}{c} \integral{V}{}{^3r} \vec{j}(\vec{r}\,) \times \vec{B}(\vec{r}\,)
 \end{equation}
-we consider the source of $\vec{B}$ to be  very far and $V$ to be small in order for a Taylor series around 0 to be reliable. 
+we consider the source of $\vec{B}$ to be  very far and $V$ to be small in order for a Taylor series around 0 to be reliable.
 \begin{equation}
 \vec{B}(\vec{r}\,) = \vec{B}(0) + \vec{r} \cdot \nabla \vec{B}(0) + \cdots
 \end{equation}
-The first non zero term of the force is 
+The first non zero term of the force is
 \begin{equation}
 	\vec{F}^{(1)} = (\vec{m} \times \nabla) \times \vec{B}(0) = \nabla(\vec{m} \cdot \vec{B}(0))
 \end{equation}
@@ -656,8 +657,8 @@ where $\rho_m(\vec{r}\,) = n(\vec{r}\,)m_q$, $\rho_q(\vec{r}\,) = n(\vec{r}\,)q 
 If we model an electron by a continuous mass/charge distribution, then since its angular momentum is quantized $L_z = m\hbar$. The component of the electron's dipole moment $\vec{\mu}$ in the $z$ direction is
 \begin{equation}
 	\mu_z = -m \frac{e\hbar}{2m_e c}
-\end{equation} 
-is known as the \textit{Bohr's magneton}. And 
+\end{equation}
+is known as the \textit{Bohr's magneton}. And
 \begin{equation}
 \Delta \mu_z = -\frac{\hbar e}{2m_e c}
 \end{equation}
@@ -675,7 +676,7 @@ and the angular momentum is
 \begin{equation}
 	\vec{L} = \vec{r}\times m\vec{v} + \frac{q}{c} \vec{r}\times\vec{A}(\vec{r}\,)
 \end{equation}
-The change in $\vec{L}$ due to changes in $\vec{A}$ is 0, then 
+The change in $\vec{L}$ due to changes in $\vec{A}$ is 0, then
 \begin{equation}
 	0 = \Delta L = \Delta \integral{}{}{^3r} \vec{r} \times \rho_m(\vec{r}\,) \vec{v} -\Delta \integral{}{}{^3r} \rho_P(\vec{r}\,)\vec{r}\times \vec{A}(\vec{r}\,)
 \end{equation}
@@ -692,7 +693,7 @@ If we sum the contribution of all the changes of the dipole moment of every elec
 \end{equation}
 then
 \begin{equation}
-	\vec{B} = \frac{\vec{H}}{1-4\pi\chi} \approx (1+4\pi\chi)\vec{H} = \mu \vec{H} 
+	\vec{B} = \frac{\vec{H}}{1-4\pi\chi} \approx (1+4\pi\chi)\vec{H} = \mu \vec{H}
 \end{equation}
 where $ \mu$ is the magnetic permeability, thus
 \begin{equation}
@@ -712,7 +713,7 @@ then,
 thus $\chi = \frac{n \mu_B^2}{k_B T}$, and $\mu = 1 + 4\pi \chi > 1$. That $\mu > 1$ is called \textbf{paramagnetism}. Paramagnetism is cause due to the spin of the electrons. The tendency of the elect5rons is to align with the external magnetic field. We need partially occupied states as in conductors. States with double occupation do not present paramagnetism.
 
 \textbf{Itinerant Paramagnetism}\\
-The degeneracy of a sistem with two identical atoms is broken if there are interactions between the atoms. with two energy levels. With a lot of atoms there are also a lot of energy levels whcih can be thpught as  a contium instead of discrete. A measure of the number of states with energy $E < \mathcal{E} <E + \Delta E$ is 
+The degeneracy of a sistem with two identical atoms is broken if there are interactions between the atoms. with two energy levels. With a lot of atoms there are also a lot of energy levels whcih can be thpught as  a contium instead of discrete. A measure of the number of states with energy $E < \mathcal{E} <E + \Delta E$ is
 	\begin{equation}
 		\rho(E) \Delta E
 	\end{equation}
@@ -721,7 +722,7 @@ In a insulator there are bands which are fulled. There exists gaps between bands
 
 In a conductor the bands are partially fulled. It costs little energy for en electron to roam in the band. If we fill some electrons in the band, there is a maximum energy called the \textit{Fermi energy}.
 
-If we turn on a $\vec{B}$, the electrons with spins up force the energy to go up by $\Delta U = \mu B$, and the electrons with spin down force the energy to drop by $\Delta U$. The system is unstable, electrons with higher energy (spin up) change their spin in order to reduce their energy.    
+If we turn on a $\vec{B}$, the electrons with spins up force the energy to go up by $\Delta U = \mu B$, and the electrons with spin down force the energy to drop by $\Delta U$. The system is unstable, electrons with higher energy (spin up) change their spin in order to reduce their energy.
 
 \textbf{Induction and Lenz's Law}\\
 We begin with an oriented closed loop. Then from Faraday's law we get
@@ -729,7 +730,7 @@ We begin with an oriented closed loop. Then from Faraday's law we get
 	\mathcal{E} = -\frac{1}{c}\frac{d}{dt}\Phi_B \ ,
 \end{equation}
 where $\mathcal{E}$ [Energy] is the \textit{electromotive force} and $\Phi_B = \oint d\vec{a}\cdot \vec{B}$ is the\textit{ magnetic flux}. The minus sign in the equation is known as \textit{Lenz's law}. We need energy to overcome the electromotive force and stablish a current. Lenz's law makes a circuit to behave as a system with inertia. %If the sign was a plus, the slightest current would increase (increase in energy out of nothing) as time passes by.
-
+\section{Electrodynamics}
 \textbf{Inductance and inductors}\\
 The inductance $L$ is the ability of a body to oppose a change in the current. And it is defined through
 \begin{equation}
@@ -741,8 +742,8 @@ An inductor is a device that stores energy in a magnetic field.
 The change in energy of a charge $\delta q$ going from $a$ to $b$ in a circuit with a battery and a coil, against a potential produced by the battery is
 \begin{equation}
 	\delta U_q = \phi(b)\delta q - \phi(a)\delta q = -V \delta q \ .
-\end{equation} 
-The charge has lost energy, from conservation of energy, the energy has been transfered to the coil 
+\end{equation}
+The charge has lost energy, from conservation of energy, the energy has been transfered to the coil
 \begin{equation}
 	\delta U_{\text{coil}} = V \delta q = L \frac{dI}{dt}\delta q
 \end{equation}
@@ -790,50 +791,50 @@ Suppose an electric circuit as in . The battery provides $V(t) = V_0\cos \omega 
 \end{equation}
 We look for solution of the form $I = I_{\text{P}} + I_{\text{H}}$, where $I_{\text{H}}$ is the solution for the homogenous equation and $I_{\text{P}}$ is a particular solution. Suppose $I_{\text{P}} = I_0e^{-i\omega t}$ then
 \begin{equation}
-	V = (-i\omega L + R)I_P 
+	V = (-i\omega L + R)I_P
 \end{equation}
 This resembles Ohm's law with an imaginary resistance $-i\omega L$, which means that $L$ behaves as a resistance. We call this imaginary resistance \textit{impedance}
 \begin{equation}
 	Z_L = -\omega L
 \end{equation}
 
-We have a nother impedance related to the capacitance
+We have a other impedance related to the capacitance
 \begin{equation}
 	Z_C = \frac{i}{\omega c}
 \end{equation}
 
 \textbf{Kirchhoff's circuit Laws}\\
 \begin{center}
-\begin{tabular}{c} 
+\begin{tabular}{c}
 \textbf{\textit{Kirchhoff's Current Law} (KCL)} \\
 \textit{The sum of the currents in a node is zero}. \\
-(Conservation of charge) \\ 
+(Conservation of charge) \\
  \\
 \textbf{\textit{Kirchhoff's Voltage Law} (KVL)} \\
 \textit{The sum of the potential differences in a closed loop is zero.}\\
-(Valid on regions where $\vec{B} = 0 \Rightarrow\oint d\vec{l}\cdot \vec{E}=0$) \\ 
-\end{tabular} 
+(Valid on regions where $\vec{B} = 0 \Rightarrow\oint d\vec{l}\cdot \vec{E}=0$) \\
+\end{tabular}
 \end{center}
 \textbf{Dictionary between classical mechanics and electical circuits}
 \begin{center}
 \begin{tabular}{|cc|cc|}
-\hline 
+\hline
 \multicolumn{2}{|c|}{\textbf{Classical mechanics}} & \multicolumn{2}{c|}{\textbf{Electrical circuits}} \\
-\hline 
-Position  & $x$ & Charge & $q$ \\ 
-\hline 
-Velocity & $v = \frac{dx}{dt}$ & Current & $I=\frac{dq}{dt}$ \\ 
 \hline
-Spring constant & $\kappa$ & Capacitance$^{-1}$ & $1/C$ \\ 
-\hline 
-Mass & $m$ & Inductance & $L$ \\ 
+Position  & $x$ & Charge & $q$ \\
 \hline
-Air resistance & $\gamma$ & Resistance & $R$  \\ 
+Velocity & $v = \frac{dx}{dt}$ & Current & $I=\frac{dq}{dt}$ \\
 \hline
-Force & $F$ & Voltage & $V$ \\ \hline 
-\multicolumn{2}{|c}{Newton's second law} & \multicolumn{2}{|c|}{Kirchhoff's voltage law} \\ 
+Spring constant & $\kappa$ & Capacitance$^{-1}$ & $1/C$ \\
 \hline
-\end{tabular} 
+Mass & $m$ & Inductance & $L$ \\
+\hline
+Air resistance & $\gamma$ & Resistance & $R$  \\
+\hline
+Force & $F$ & Voltage & $V$ \\ \hline
+\multicolumn{2}{|c}{Newton's second law} & \multicolumn{2}{|c|}{Kirchhoff's voltage law} \\
+\hline
+\end{tabular}
 
 \end{center}
 \textbf{Transmission Line}\\
@@ -849,7 +850,7 @@ Consider a long coaxial cable. Suppose the cable is the union of coaxial cables 
 	\draw (0,0) ellipse(0.05 and 0.2);
 	\draw (0,0.5)--(5,0.5);
 	\draw (0,-0.5)--(5,-0.5);
-	
+
 	\draw[dashed] (0,0.2)--(5,0.2);
 	\draw[dashed] (0,-0.2)--(5,-0.2);
 	\draw[dotted] (0.7,0.5) arc(90:-90:0.1 and 0.5);
@@ -875,17 +876,17 @@ Consider a long coaxial cable. Suppose the cable is the union of coaxial cables 
 	\draw[dashed] (1,-2)--(2,-2);
 	\draw (2,-2)--(6,-2);
 	\draw[dashed] (6,-2)--(7,-2);
-	
+
 	%labes
 	\draw (1,-1) node[right] {$C$} ;
 	\draw (3,-1) node[right] {$C$} ;
 	\draw (5,-1) node[right] {$C$} ;
 	\draw (3,-0.4) node {$L$};
 	\draw (5,-0.4) node {$L$};
-	
+
 	% currents
 	\draw (3,0.5) node {$I_n$};
-	\draw (5,0.5) node {$I_{n+1}$};	
+	\draw (5,0.5) node {$I_{n+1}$};
 \end{circuitikz}
 \caption{$x_{n+1}-x_n = \Delta x$}
 \end{subfigure}
@@ -895,17 +896,17 @@ Consider a long coaxial cable. Suppose the cable is the union of coaxial cables 
 
 The potential difference of the $n$-th inductor is
 \begin{equation}
-	-V_n = \varphi_{n-1} - \varphi_n = L \dt{I_n}, 
-\end{equation} 
+	-V_n = \varphi_{n-1} - \varphi_n = L \dt{I_n},
+\end{equation}
 where $f_n = f(x_n,t)$. The potential difference in the $n$-th capacitor is $\varphi_n = \frac{Q_n}{C}$ and has a current $\dt{Q_n}$. Taking the derivative of the potential and using KCL we get
 \begin{equation}
 	\dt{\varphi_n} =\frac{1}{C}\dt{Q_n} = \frac{1}{C}(I_n-I_{n+1})
 \end{equation}
 thus
 \begin{equation}
-	\dt{\varphi_{n-1}} - \dt{\varphi_n} = L \frac{d^2 I_n}{dt^2} 
+	\dt{\varphi_{n-1}} - \dt{\varphi_n} = L \frac{d^2 I_n}{dt^2}
 \end{equation}
-substuting , we get
+substituting , we get
 \begin{equation}
 	\frac{1}{C} (I_{n-1} -I_n) - \frac{1}{C}(I_n-I_{n+1}) = L \frac{d^2 I_n}{dt^2}
 \end{equation}
@@ -917,7 +918,7 @@ Finally we arrive at
 where $v^2 = \frac{(\Delta x)^2}{LC} = c^2$.
 
 \textbf{Mutual inductance}\\
-Consider a cilinder made by a material with permeability $\mu$, radius $a$ and length $l\gg a$. Roll a cable around the cilinder with $N\gg 1$ turns and set a current $I_1$, call this configuration circuit 1. Roll a second cable aorund the cilinder, but isolated from the first one, with $N_2 \gg 1$ turns and a current $I_2$, call it circuit 2. Then the magnetic field is
+Consider a cylinder made by a material with permeability $\mu$, radius $a$ and length $l\gg a$. Roll a cable around the cilinder with $N\gg 1$ turns and set a current $I_1$, call this configuration circuit 1. Roll a second cable aorund the cilinder, but isolated from the first one, with $N_2 \gg 1$ turns and a current $I_2$, call it circuit 2. Then the magnetic field is
 \begin{equation}
 	B = B_1 + B_2 = \frac{4\pi}{c}\frac{N_1}{l}I_1 + \frac{4\pi}{c}\frac{N_2}{l}I_2
 \end{equation}
@@ -926,7 +927,7 @@ and the energy density
 	u = \frac{BH}{8\pi} = \frac{\mu}{8\pi}\left(\frac{4\pi}{cl} \right)^2 (N_1 I_1 + N_2 I_2)^2
 \end{equation}
 integrating over the volume of the cilynder we get the total energy
-\begin{equation}  
+\begin{equation}
 	U = \frac{2\pi}{c^2 l^2}\mu (\pi a^2 l)(N_1 I_1 + N_2 I_2)^2 = \frac{2\pi^2 a^2}{c^2 l}\mu (N_1^2 I^2_1 + 2N_1N_2 I_1 I_2 + N_2^2 I_2^2)
 \end{equation}
 Changing notation
@@ -948,16 +949,16 @@ Also, the power is the work per unit time we do over the charges over $I_1$ plus
 I we move a charge from one point to another, it will lose energy which is gained by the coil, then
 \begin{equation}
 	\mathcal{P} = \sum_i \dt{q_i} V_i
-\end{equation} 
+\end{equation}
 Comparing, we get
 \begin{equation}
 	V_i = \sum_{j} L_{ij}I_j
 \end{equation}
-We call $L_{ii}$ (no implicit sum) the \textit{autoinductance}. And $L_{ij}$, with $i\neq j$ \textit{mutual inductance}.
+We call $L_{ii}$ (no implicit sum) the \textit{auto-inductance}. And $L_{ij}$, with $i\neq j$ \textit{mutual inductance}.
 
 
 \textbf{Transformers}\\
-Consider the circuit in figure ... Since it is an open circuit $I_2 = 0$ and using eq.  
+Consider the circuit in figure ... Since it is an open circuit $I_2 = 0$ and using eq.
 \begin{eqnarray}
 	V_1 & = & L_{11}\dt{I_1} \\
 	V_2 & = & L_{21}\dt{I_2}
@@ -979,13 +980,13 @@ Using eq. and Ohm's law, we get the set of couple equations
 \begin{eqnarray}
 	V_1 & = & -i\omega L_{11}I_1 -i\omega L_{12}I_2 \\
 	V_2 & = & -i\omega L_{21}I_1 -i\omega L_{22}I_2 \\
-	V_2 & = & R_C I_2 
+	V_2 & = & R_C I_2
 \end{eqnarray}
 Now suppose $R_C$ is large in order to $I_2$ to be really small. Then we can dismiss the terms containing $I_2$ so we can use eq.
 \begin{equation}
 	I_2 \approx \frac{L_{21}}{L_{11}} \frac{V_1}{R_C}
 \end{equation}
-Another situation is when $R_C = 0 \Rightarrow V_2 = 0$. Then circuit 2 is in short-circuit. This gives constraints, $I_1$ must not be too large in order for  circuit 2 not to burn. 
+Another situation is when $R_C = 0 \Rightarrow V_2 = 0$. Then circuit 2 is in short-circuit. This gives constraints, $I_1$ must not be too large in order for  circuit 2 not to burn.
 
 \textbf{More on Conservation Laws}\\
 We know that $\vec{j}\cdot \vec{E}$ is the power per unit time per unit volume that the fields give to a mechanical system. Therefore $-\vec{j}\cdot \vec{E}$ is power the system gives to the fields. We can interpret this as the source of energy density of the fields. Then the energy density of the fields satisfy the a continuity equation with sources
@@ -1005,7 +1006,7 @@ where
 	u & = & \frac{1}{8\pi} (E^2 + B^2) \\
 	\vec{S} & = & \frac{c}{4\pi}\vec{E} \times \vec{B}
 \end{eqnarray}
-In materials, the energy must satisfy a contonuity equation with sources, but now the current density  is the current that does not come from the materials. We call it the external current density $\vec{j}^{\text{ex}}$. So 
+In materials, the energy must satisfy a continuity equation with sources, but now the current density  is the current that does not come from the materials. We call it the external current density $\vec{j}^{\text{ex}}$. So
 \begin{equation}
 	-\vec{j}^{\text{ex}}\cdot \vec{E} = \partial_t u + \nabla \cdot \vec{S}
 \end{equation}
@@ -1015,10 +1016,10 @@ With a similar analysis but now using Maxwell equations in materials we arrive a
 	E}\cdot\vec{D} + \vec{B}\cdot \vec{H}) \\
 	\vec{S} & = & \frac{c}{4\pi}\vec{E} \times \vec{H}
 \end{eqnarray}
-However these relations are only valid in no dispersive regions of transparency where we can assume both the permeability and permitivity as constants. 
+However these relations are only valid in no dispersive regions of transparency where we can assume both the permeability and permittivity as constants.
 
 \textbf{Conservation of momentum}\\
-From Newton's 2nd law, the Lorenz force is$F_{\text{em}} = \dot{p}$ where $F_{\text{em}}$ is  the momentum per unit time that the fields give to a mechanical system, therefore $-F_{\text{em}}$ is the source of momentum per unit time given to the fields. Then the fields satisfy a continouity equation of momentum with source
+From Newton's 2nd law, the Lorenz force is$F_{\text{em}} = \dot{p}$ where $F_{\text{em}}$ is  the momentum per unit time that the fields give to a mechanical system, therefore $-F_{\text{em}}$ is the source of momentum per unit time given to the fields. Then the fields satisfy a continuity equation of momentum with source
 \begin{equation}
 	-\vec{f} = -\rho \vec{E} - \frac{1}{c}\vec{j}\times \vec{B} = \partial_t \vec{g} + \nabla\cdot(-T)
 \end{equation}
@@ -1031,8 +1032,8 @@ where $\vec{g}$ is the momentum density and $-T$ is the flux of momentum. Using 
 $T$ is a symmetric tensor known as the \textit{Stress Tensor}.
 
 \begin{tabular}{c}
-$-T_{ij}$ :  $j$ component of momentum that flows over direction $i$ per unit time per unit area. 
-\end{tabular} 
+$-T_{ij}$ :  $j$ component of momentum that flows over direction $i$ per unit time per unit area.
+\end{tabular}
 
 The stress tensor is useful to work with problems where the force is needed but there is a discontinuity of the fields.
 From fluid mechanics we know that
@@ -1050,10 +1051,10 @@ thus
 Therefore in a fluid $T = -p I$. This result let us interpret terms in the diagonal. Negative terms are pressures, and positve terms are tensions per unit area.
 
 \textbf{Force on the plates of a capacitor}\\
-Consider a capacitor where we glue a charge $Q$ on the left and $-Q$ on the right. What force is acting on the left plaque? We know that the field is discontinous. Outside the plaques the field is 0 and inside is $E = \frac{4\pi Q}{A}$. We could argue that the force on the left plaque is $F  = \frac{4\pi Q^2}{A}$. However, imagine that we move lightly to the left plaque 1 a distance $l$. In magnitude $F_{\text{me}} = F_{\text{e-m}}$, then we have produced work $W = F_{\text{me}} l = F_{\text{e-m}} l= \Delta U$, where $\Delta U$ is the change in potential energy and $\Delta U = \Delta V u = (A l)\frac{E^2}{8\pi}$,where $\Delta V$ is the change in the volume and $u$ is the energy density of the electric field. Therefore $F_{\text{e-m}} = \frac{2\pi Q^2}{A}$. Which is differente from the previous one, which is the correct one?. We use instead the momentum conservation equation. In a stationary situation $\partial_t\vec{g} = 0$ and
-$-\vec{f} = -\nabla \cdot T$ so $\vec{F} = \int_{\partial V} d\vec{a}\cdot T$. The only non zero component of $T$ is 
+Consider a capacitor where we glue a charge $Q$ on the left and $-Q$ on the right. What force is acting on the left plaque? We know that the field is discontinuous. Outside the plaques the field is 0 and inside is $E = \frac{4\pi Q}{A}$. We could argue that the force on the left plaque is $F  = \frac{4\pi Q^2}{A}$. However, imagine that we move lightly to the left plaque 1 a distance $l$. In magnitude $F_{\text{me}} = F_{\text{e-m}}$, then we have produced work $W = F_{\text{me}} l = F_{\text{e-m}} l= \Delta U$, where $\Delta U$ is the change in potential energy and $\Delta U = \Delta V u = (A l)\frac{E^2}{8\pi}$,where $\Delta V$ is the change in the volume and $u$ is the energy density of the electric field. Therefore $F_{\text{e-m}} = \frac{2\pi Q^2}{A}$. Which is different from the previous one, which is the correct one?. We use instead the momentum conservation equation. In a stationary situation $\partial_t\vec{g} = 0$ and
+$-\vec{f} = -\nabla \cdot T$ so $\vec{F} = \int_{\partial V} d\vec{a}\cdot T$. The only non zero component of $T$ is
 \begin{equation}
-	T_{xx} = \frac{1}{8\pi}E^2 
+	T_{xx} = \frac{1}{8\pi}E^2
 \end{equation}
 thus
 \begin{equation}
@@ -1062,7 +1063,7 @@ thus
 Therefore, the plaques are in tension.
 
 \textbf{Force acting on the wires of a solenoid}\\
-Consider a long solenoid of radius $a$ and length $l \gg a$.  We know that $\vec{B} = \frac{4\pi}{c}\frac{N}{l} I \hat{z}$, where $r<a$ and $\vec{B} = 0$ where $r>a$. We have a discontinuity in the field 
+Consider a long solenoid of radius $a$ and length $l \gg a$.  We know that $\vec{B} = \frac{4\pi}{c}\frac{N}{l} I \hat{z}$, where $r<a$ and $\vec{B} = 0$ where $r>a$. We have a discontinuity in the field
 
 \textbf{Conservation of angular momentum}\\
 We can consider $-\vec{r}\times \vec{f}=-\vec{\tau}$ to be the source of angular momentum per unit time per unit volume of the fields.
@@ -1073,41 +1074,67 @@ We can consider $-\vec{r}\times \vec{f}=-\vec{\tau}$ to be the source of angular
 	& = & \partial_t(\vec{r}\times\vec{g})_i + \partial_l (\epsilon_{ijk}r_jT_{lk}) - \epsilon_{ijk}T_{jk}\\
 	-\vec{\tau} & = & \partial_t \vec{l} + \nabla\cdot M
 \end{eqnarray}
-where 
+where
 \begin{eqnarray}
 	\vec{l} & = & \vec{r}\times \vec{g}\\
 	M_{li} & = & \epsilon_{ijk}r_j T_{lk}
 \end{eqnarray}
 
 
-\textbf{Particular solution to the wave equation in 3d with initial conditions}\\
-Suppose we have a function $\Psi$ satisfying the wave equation with initial conditions
-\begin{equation}
-	\Psi(\vec{r},0) = 0, \ \ \ \partial_t \Psi(\vec{r},0) = V(\vec{r})
+\textbf{Particular solution to the homogeneous wave equation in 3d with initial conditions}
+
+Suppose we have a function $\Psi$ satisfying the wave equation
+\begin{equation}\label{WEqScalarPotential}
+	\nabla ^{2}\Psi(\vec{r},t)-\frac{1}{c^{2}}\frac{\partial^{2}\Psi(\vec{r},t)}{\partial t^{2}}=0,
 \end{equation}
-We apply the fourier transform to the spatial component of $\Psi$, $\Psi(\vec{r},t) = \int{\frac{d^3k}{(2\pi)^3}}\  \Psi_{\vec{k}}(t)e^{i\vec{k}\cdot\vec
-r}$ and to the wave equation wich turns $\nabla \rightarrow i\vec{k}$, therefore
+with initial conditions
 \begin{equation}
--k^2 \Psi_{\vec{k}}(t) -\frac{1}{c^2}\partial_t^2\Psi_{\vec{k}}(t) = 0 \Rightarrow \der{^2\Psi_{\vec{k}}(t)}{t^2} = - c^2k^2\Psi_{\vec{k}}(t)
+	\label{GeneralIntitialconditions}
+	\Psi(\vec{r},0) = I(\vec{r}), \ \ \ \partial_t \Psi(\vec{r},0) = V(\vec{r}).
+\end{equation}
+Because of simplicity, consider the restricted case whit the follow initial conditions
+\begin{equation}
+	\label{ReestrictedIntitialcondition}
+	\Psi(\vec{r},0) = 0, \ \ \ \partial_t \Psi(\vec{r},0) = V(\vec{r}).
+\end{equation}
+Writing the potential as a Fourier integral of the spatial component,
+\begin{equation}
+	\label{ScalarPotentialFT}
+	\Psi(\vec{r},t) = \int{\frac{d^3k}{(2\pi)^3}}\  \Psi_{\vec{k}}(t)e^{i\vec{k}\cdot\vec
+		r}
+\end{equation}
+and identifying the differential operators in Fourier space as
+\[\nabla \rightarrow i\vec{k},\]
+\[\nabla^{2} \rightarrow -k^{2},\]
+the wave equation \ref{WEqScalarPotential} becomes into an algebraic one,
+\begin{equation}
+	\begin{split}\label{AlgebraicHWEforscalarpotential}
+		-k^2 \Psi_{\vec{k}}(t) -\frac{1}{c^2}\partial_t^2\Psi_{\vec{k}}(t) = 0, \\
+		 \Rightarrow \der{^2\Psi_{\vec{k}}(t)}{t^2} = - c^2k^2\Psi_{\vec{k}}(t),
+	\end{split}
 \end{equation}
 so we get a solution
-\begin{equation}
-\Psi_{\vec{k}}(t) = a_{\vec{k}} \cos (\omega_k t) + b_{\vec{k}} \sin (\omega_k t), \ \ \ \omega_k = kc
+\begin{equation}\label{GeneralSacalarPotentialForHWE}
+\Psi_{\vec{k}}(t) = a_{\vec{k}} \cos (\omega_k t) + b_{\vec{k}} \sin (\omega_k t), \ \ \ \omega_k = kc.
 \end{equation}
-The initial conditions in fourier space are
+
+Fourier transformation and implications of initial conditions are
 \begin{equation}
-	\Psi_{\vec{k}}(0) = 0 \Rightarrow a_{\vec{k}} = 0, \ \ \ \dt{\Psi_{\vec{k}}}(0) = V_{\vec{k}} = \integral{}{}{^3r} V(\vec{r})e^{-i\vec{k}\cdot\vec{r}} \Rightarrow  b_{\vec{k}} = \frac{V(\vec{k})}{kc}
+	\begin{split}
+		\Psi_{\vec{k}}(0) = 0 \Rightarrow a_{\vec{k}} = 0, \\
+		\frac{d\Psi_{\vec{k}}}{dt}(0) = V_{\vec{k}} = \integral{d^3r} V(\vec{r})e^{-i\vec{k}\cdot\vec{r}}, \\ \Rightarrow  b_{\vec{k}} = \frac{V(\vec{k})}{kc}
+	\end{split}
 \end{equation}
 thus
 \begin{equation}
-\Psi(\vec{r},t) = \int d^3 r' \ V(\vec{r'}) \int \frac{d^3k}{(2\pi)^3}\ \frac{\sin (kct)}{kc} e^{i\vec{k}\cdot(\vec{r}-\vec{r}')}  
+\Psi(\vec{r},t) = \int d^3 r' \ V(\vec{r'}) \int \frac{d^3k}{(2\pi)^3}\ \frac{\sin (kct)}{kc} e^{i\vec{k}\cdot(\vec{r}-\vec{r}')}
 \end{equation}
-To evaluate the integral we use spherical coordinattes. We choose the $z$ axis in the $\vec{r}-\vec{r}'$ direction, so $\vec{k}\cdot(\vec{r}-\vec{r}') = k|\vec{r}-\vec{r}'|\cos \theta$, we also write $\vec{R} = |\vec{r}-\vec{r}\,'|\hat{\Omega}$ 
+To evaluate the integral we use spherical coordinattes. We choose the $z$ axis in the $\vec{r}-\vec{r}'$ direction, so $\vec{k}\cdot(\vec{r}-\vec{r}') = k|\vec{r}-\vec{r}'|\cos \theta$, we also write $\vec{R} = |\vec{r}-\vec{r}\,'|\hat{\Omega}$
 \begin{eqnarray}
 	%\Psi(\vec{r},t) & = & -\frac{1}{4c}\int d^3r' \ \frac{V(\vec{r}\,')}{R} \int_{-\infty}^{\infty} \frac{dk}{(2\pi)^2} \left(e^{ik(R+ct)} - e^{-ik(R-ct)}+e^{-ik(R-ct)} + e^{-ik(R+ct)}\right) \nonumber\\
 	\Psi(\vec{r},t)& = & -\frac{2}{4c} \frac{1}{2\pi} \int d^3r' \frac{V(\vec{r}\,')}{R} \left[\delta(\underbrace{R+ct}_{>0}) - \delta(R-ct) \right]
 \end{eqnarray}
-We are only considering times greater than $t = 0$, where the initial conditions are, so we can drop $\delta(R+ct)$. And 
+We are only considering times greater than $t = 0$, where the initial conditions are, so we can drop $\delta(R+ct)$. And
 \begin{equation}
 	\Psi(\vec{r},t) = \frac{1}{4\pi c} \int d^3r' \  \frac{V(\vec{r}\,')}{|\vec{r}-\vec{r}\,'|} \delta(ct-|\vec{r}-\vec{r}\,'|)
 \end{equation}
@@ -1116,16 +1143,17 @@ We replace the integral over $r'$ with $R$ so
 	\Psi(\vec{r},t) = \frac{t}{4\pi} \int d\hat{\Omega} \ V(\vec{r} + ct\hat{\Omega}) = t \langle V(\vec{r} + ct\hat{\Omega}) \rangle_{\hat{\Omega}}
 \end{equation}
 
-\textbf{General solution of the wave equation in 3d with initial conditions}\\
+\textbf{General solution of the wave equation in 3d with initial conditions}
+
 Suppose we have a function $\Psi$ satisfying the wave equation with initial conditions
 \begin{equation}
 	\Psi(\vec{r},0) = I(\vec{r}), \ \ \ \partial_t \Psi(\vec{r},0) = 0
 \end{equation}
-If we define the function $\varphi(\vec{r},t) =t \langle I(\vec{r} + ct\hat{\Omega}) \rangle_{\hat{\Omega}}$, which satisfies the wave equation with initial conditions 
+If we define the function $\varphi(\vec{r},t) =t \langle I(\vec{r} + ct\hat{\Omega}) \rangle_{\hat{\Omega}}$, which satisfies the wave equation with initial conditions
 \begin{equation}
 	\varphi(\vec{r},0) = 0, \ \ \ \partial_t \Psi(\vec{r},0) = I(\vec{r})
 \end{equation}
-we verify that $\Psi(\vec{r},t) = \partial_t \varphi(\vec{r},t)$. Finally, if we have a function satifying the wave equation with generic initial conditions
+we verify that $\Psi(\vec{r},t) = \partial_t \varphi(\vec{r},t)$. Finally, if we have a function satisfying the wave equation with generic initial conditions
 \begin{equation}
 	\varphi(\vec{r},0) = I(\vec{r}), \ \ \ \partial_t \Psi(\vec{r},0) = V(\vec{r})
 \end{equation}
@@ -1143,9 +1171,9 @@ Consider a source $f(t) = \int \frac{d\omega}{2\pi}f_{\omega}e^{-i\omega t}$, th
 \textbf{Spatial and time translational invariance in the Green's function}\\
 Greens' functions have a traslation invariance if we move rigidly the source and the point of measure. Also, they have time translational invariance since  the effect at time $t$ of a source produced at time $t'<t$ only depend on the time difference. In this sense
 \begin{equation}
-	G(\vec{r},\vec{r}\,',t,t')= G(\vec{r}+ \vec{a},t+t_0,\vec{r}\,'+\vec{a},t'+t_0) 
-\end{equation}   
-In particular we can choose $\vec{a} = -\vec{r}\,'$ and $t_0 = -t'$ so now the Green's function only depend on just two variables $\vec{r}-\vec{r}\,'$ and $t-t'$ 
+	G(\vec{r},\vec{r}\,',t,t')= G(\vec{r}+ \vec{a},t+t_0,\vec{r}\,'+\vec{a},t'+t_0)
+\end{equation}
+In particular we can choose $\vec{a} = -\vec{r}\,'$ and $t_0 = -t'$ so now the Green's function only depend on just two variables $\vec{r}-\vec{r}\,'$ and $t-t'$
 \begin{equation}
 	G = G(\vec{r}-\vec{r}\,',t-t')
 \end{equation}
@@ -1153,7 +1181,7 @@ In particular we can choose $\vec{a} = -\vec{r}\,'$ and $t_0 = -t'$ so now the G
 \textbf{Solution to the wave equation with sources in 3d}\\
 Suppose $\Psi(\vec{r},t)$ satisfies the wave equation with sources
 \begin{equation}
-	\nabla^2 \Psi - \frac{1}{c^2}\partial_t^2 \Psi = -4\pi f 
+	\nabla^2 \Psi - \frac{1}{c^2}\partial_t^2 \Psi = -4\pi f
 \end{equation}
 We guess a Green's function $G$ to be the solution of a wave equation with a point source at $\vec{r}\,'$ that only live at time $t'$ (obviuosly not real since sources/charges are conserved)
 \begin{equation}
@@ -1179,8 +1207,8 @@ Therefore
 \end{equation}
 In order to evalute integral over $\omega$ we turn $\omega$ into a complex number $\omega = \omega' + i\omega''$ in this way we can use Cauchy's residue theorem.  However we have two poles $\omega = \pm kc$ we need to avoid. We invoke the causality principle: sources now ($t = 0$) do not affect the field in the past ($t<0$). This means that the integral at times $t<0$ must vanish. One way to warranty that the reponse is causal, is to assure there are no singularities inside the countour.
 %These kind of integral often use a contour of a semi-circle going up or down.
-If we want integral over the semicircle to vanish at $R\to\infty$ we need to have $e^{\omega''t}<1$ this means $\omega'' > 0$. 
- If we turn the sources adiabatically, that is we write $\omega \to \omega+ i\eta, \ \eta >0, \ \eta \to 0^+$, then we would have moved the poles down to the imaginary axis by $\eta$, that is $\omega = \pm kc - i\eta$. From Cauchy's theorem the integral over the upper semicircle will vanish sincce there are no poles enclosed.   
+If we want integral over the semicircle to vanish at $R\to\infty$ we need to have $e^{\omega''t}<1$ this means $\omega'' > 0$.
+ If we turn the sources adiabatically, that is we write $\omega \to \omega+ i\eta, \ \eta >0, \ \eta \to 0^+$, then we would have moved the poles down to the imaginary axis by $\eta$, that is $\omega = \pm kc - i\eta$. From Cauchy's theorem the integral over the upper semicircle will vanish sincce there are no poles enclosed.
 
 If $t>0$ we use Cauchy's theorem with a countour as in figure ...
 Then we get
@@ -1250,6 +1278,7 @@ assuming of course $\lambda\gg L$. In an oscillating electrical circuit the powe
 \begin{equation}
 	P = \langle V I \rangle = \langle R I^2(t)\rangle = \frac{1}{2}R I_0^2
 \end{equation}
+
 So, in the perspective of an electrical circuit we can describe the antenna as a resistor with resistance 
 \begin{equation}
 R_{\text{rad}} = \frac{8\omega^2L^2}{3\pi^2c^3}
