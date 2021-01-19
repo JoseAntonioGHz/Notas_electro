@@ -25,7 +25,9 @@
 \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} % partial derivative
 \newcommand{\integral}[3]{\int_{#1}^{#2} d #3 \ } % integral	
 
+% Text
 \newcommand{\tr}{\text{tr}}
+\newcommand{\re}{\text{Re}}
 
 \makeatletter
 \def\overUnderArrow{\@ifnextchar[\overUnderArrow@i{\overUnderArrow@i[]}}
@@ -46,9 +48,6 @@
 \textbf{Gauge Transformation}\\
 Local transformation that leaves the Lagrangian/Hamiltonian unchaged.
 
-\textbf{Schoredinger <3 Dirac }\\
-
-hola perros
 
 Schrödinger equation is invariant under global transformations of the wave function
 \begin{equation}
@@ -258,7 +257,8 @@ The shift in the fringe pattern i a double slit experiment in a region where $\v
 \end{figure}
 
 \section{Electrostatics}
-\textbf{Electric Field of a point charge}\\
+\textbf{Electric Field of a point charge}
+
 \begin{equation}
 	\vec{E}(\vec{r}\ ) = \frac{q}{r^3}\vec{r}
 \end{equation}
@@ -559,7 +559,7 @@ since $\vec{d} = \alpha \vec{E}$, then
 \begin{equation}
 	\alpha = \frac{e^2}{m}\sum_{ij} \frac{f_{ij}}{\omega_{ij}^2-\tilde{\omega}^2}
 \end{equation}
-where $f_{ij}$ is knwon as the oscilator force.
+where $f_{ij}$ is known as the oscillator force.
 \begin{equation}
 	f_{nm}^{ij} = \frac{2m}{\hbar}\rho_{nn}r_{nm}^ir_{mn}^j\omega_{mn} (1-\rho_m)
 \end{equation}
@@ -730,7 +730,7 @@ We begin with an oriented closed loop. Then from Faraday's law we get
 	\mathcal{E} = -\frac{1}{c}\frac{d}{dt}\Phi_B \ ,
 \end{equation}
 where $\mathcal{E}$ [Energy] is the \textit{electromotive force} and $\Phi_B = \oint d\vec{a}\cdot \vec{B}$ is the\textit{ magnetic flux}. The minus sign in the equation is known as \textit{Lenz's law}. We need energy to overcome the electromotive force and stablish a current. Lenz's law makes a circuit to behave as a system with inertia. %If the sign was a plus, the slightest current would increase (increase in energy out of nothing) as time passes by.
-
+\section{Electrodynamics}
 \textbf{Inductance and inductors}\\
 The inductance $L$ is the ability of a body to oppose a change in the current. And it is defined through
 \begin{equation}
@@ -798,7 +798,7 @@ This resembles Ohm's law with an imaginary resistance $-i\omega L$, which means 
 	Z_L = -\omega L
 \end{equation}
 
-We have a nother impedance related to the capacitance
+We have a other impedance related to the capacitance
 \begin{equation}
 	Z_C = \frac{i}{\omega c}
 \end{equation}
@@ -906,7 +906,7 @@ thus
 \begin{equation}
 	\dt{\varphi_{n-1}} - \dt{\varphi_n} = L \frac{d^2 I_n}{dt^2} 
 \end{equation}
-substuting , we get
+substituting , we get
 \begin{equation}
 	\frac{1}{C} (I_{n-1} -I_n) - \frac{1}{C}(I_n-I_{n+1}) = L \frac{d^2 I_n}{dt^2}
 \end{equation}
@@ -918,7 +918,7 @@ Finally we arrive at
 where $v^2 = \frac{(\Delta x)^2}{LC} = c^2$.
 
 \textbf{Mutual inductance}\\
-Consider a cilinder made by a material with permeability $\mu$, radius $a$ and length $l\gg a$. Roll a cable around the cilinder with $N\gg 1$ turns and set a current $I_1$, call this configuration circuit 1. Roll a second cable aorund the cilinder, but isolated from the first one, with $N_2 \gg 1$ turns and a current $I_2$, call it circuit 2. Then the magnetic field is
+Consider a cylinder made by a material with permeability $\mu$, radius $a$ and length $l\gg a$. Roll a cable around the cilinder with $N\gg 1$ turns and set a current $I_1$, call this configuration circuit 1. Roll a second cable aorund the cilinder, but isolated from the first one, with $N_2 \gg 1$ turns and a current $I_2$, call it circuit 2. Then the magnetic field is
 \begin{equation}
 	B = B_1 + B_2 = \frac{4\pi}{c}\frac{N_1}{l}I_1 + \frac{4\pi}{c}\frac{N_2}{l}I_2
 \end{equation}
@@ -954,7 +954,7 @@ Comparing, we get
 \begin{equation}
 	V_i = \sum_{j} L_{ij}I_j
 \end{equation}
-We call $L_{ii}$ (no implicit sum) the \textit{autoinductance}. And $L_{ij}$, with $i\neq j$ \textit{mutual inductance}.
+We call $L_{ii}$ (no implicit sum) the \textit{auto-inductance}. And $L_{ij}$, with $i\neq j$ \textit{mutual inductance}.
 
 
 \textbf{Transformers}\\
@@ -1006,7 +1006,7 @@ where
 	u & = & \frac{1}{8\pi} (E^2 + B^2) \\
 	\vec{S} & = & \frac{c}{4\pi}\vec{E} \times \vec{B}
 \end{eqnarray}
-In materials, the energy must satisfy a contonuity equation with sources, but now the current density  is the current that does not come from the materials. We call it the external current density $\vec{j}^{\text{ex}}$. So 
+In materials, the energy must satisfy a continuity equation with sources, but now the current density  is the current that does not come from the materials. We call it the external current density $\vec{j}^{\text{ex}}$. So 
 \begin{equation}
 	-\vec{j}^{\text{ex}}\cdot \vec{E} = \partial_t u + \nabla \cdot \vec{S}
 \end{equation}
@@ -1016,10 +1016,10 @@ With a similar analysis but now using Maxwell equations in materials we arrive a
 	E}\cdot\vec{D} + \vec{B}\cdot \vec{H}) \\
 	\vec{S} & = & \frac{c}{4\pi}\vec{E} \times \vec{H}
 \end{eqnarray}
-However these relations are only valid in no dispersive regions of transparency where we can assume both the permeability and permitivity as constants. 
+However these relations are only valid in no dispersive regions of transparency where we can assume both the permeability and permittivity as constants. 
 
 \textbf{Conservation of momentum}\\
-From Newton's 2nd law, the Lorenz force is$F_{\text{em}} = \dot{p}$ where $F_{\text{em}}$ is  the momentum per unit time that the fields give to a mechanical system, therefore $-F_{\text{em}}$ is the source of momentum per unit time given to the fields. Then the fields satisfy a continouity equation of momentum with source
+From Newton's 2nd law, the Lorenz force is$F_{\text{em}} = \dot{p}$ where $F_{\text{em}}$ is  the momentum per unit time that the fields give to a mechanical system, therefore $-F_{\text{em}}$ is the source of momentum per unit time given to the fields. Then the fields satisfy a continuity equation of momentum with source
 \begin{equation}
 	-\vec{f} = -\rho \vec{E} - \frac{1}{c}\vec{j}\times \vec{B} = \partial_t \vec{g} + \nabla\cdot(-T)
 \end{equation}
@@ -1051,7 +1051,7 @@ thus
 Therefore in a fluid $T = -p I$. This result let us interpret terms in the diagonal. Negative terms are pressures, and positve terms are tensions per unit area.
 
 \textbf{Force on the plates of a capacitor}\\
-Consider a capacitor where we glue a charge $Q$ on the left and $-Q$ on the right. What force is acting on the left plaque? We know that the field is discontinous. Outside the plaques the field is 0 and inside is $E = \frac{4\pi Q}{A}$. We could argue that the force on the left plaque is $F  = \frac{4\pi Q^2}{A}$. However, imagine that we move lightly to the left plaque 1 a distance $l$. In magnitude $F_{\text{me}} = F_{\text{e-m}}$, then we have produced work $W = F_{\text{me}} l = F_{\text{e-m}} l= \Delta U$, where $\Delta U$ is the change in potential energy and $\Delta U = \Delta V u = (A l)\frac{E^2}{8\pi}$,where $\Delta V$ is the change in the volume and $u$ is the energy density of the electric field. Therefore $F_{\text{e-m}} = \frac{2\pi Q^2}{A}$. Which is differente from the previous one, which is the correct one?. We use instead the momentum conservation equation. In a stationary situation $\partial_t\vec{g} = 0$ and
+Consider a capacitor where we glue a charge $Q$ on the left and $-Q$ on the right. What force is acting on the left plaque? We know that the field is discontinuous. Outside the plaques the field is 0 and inside is $E = \frac{4\pi Q}{A}$. We could argue that the force on the left plaque is $F  = \frac{4\pi Q^2}{A}$. However, imagine that we move lightly to the left plaque 1 a distance $l$. In magnitude $F_{\text{me}} = F_{\text{e-m}}$, then we have produced work $W = F_{\text{me}} l = F_{\text{e-m}} l= \Delta U$, where $\Delta U$ is the change in potential energy and $\Delta U = \Delta V u = (A l)\frac{E^2}{8\pi}$,where $\Delta V$ is the change in the volume and $u$ is the energy density of the electric field. Therefore $F_{\text{e-m}} = \frac{2\pi Q^2}{A}$. Which is different from the previous one, which is the correct one?. We use instead the momentum conservation equation. In a stationary situation $\partial_t\vec{g} = 0$ and
 $-\vec{f} = -\nabla \cdot T$ so $\vec{F} = \int_{\partial V} d\vec{a}\cdot T$. The only non zero component of $T$ is 
 \begin{equation}
 	T_{xx} = \frac{1}{8\pi}E^2 
@@ -1081,23 +1081,50 @@ where
 \end{eqnarray}
 
 
-\textbf{Particular solution to the wave equation in 3d with initial conditions}\\
-Suppose we have a function $\Psi$ satisfying the wave equation with initial conditions
-\begin{equation}
-	\Psi(\vec{r},0) = 0, \ \ \ \partial_t \Psi(\vec{r},0) = V(\vec{r})
+\textbf{Particular solution to the homogeneous wave equation in 3d with initial conditions}
+
+Suppose we have a function $\Psi$ satisfying the wave equation
+\begin{equation}\label{WEqScalarPotential}
+	\nabla ^{2}\Psi(\vec{r},t)-\frac{1}{c^{2}}\frac{\partial^{2}\Psi(\vec{r},t)}{\partial t^{2}}=0,
 \end{equation}
-We apply the fourier transform to the spatial component of $\Psi$, $\Psi(\vec{r},t) = \int{\frac{d^3k}{(2\pi)^3}}\  \Psi_{\vec{k}}(t)e^{i\vec{k}\cdot\vec
-r}$ and to the wave equation wich turns $\nabla \rightarrow i\vec{k}$, therefore
+with initial conditions
 \begin{equation}
--k^2 \Psi_{\vec{k}}(t) -\frac{1}{c^2}\partial_t^2\Psi_{\vec{k}}(t) = 0 \Rightarrow \der{^2\Psi_{\vec{k}}(t)}{t^2} = - c^2k^2\Psi_{\vec{k}}(t)
+	\label{GeneralIntitialconditions}
+	\Psi(\vec{r},0) = I(\vec{r}), \ \ \ \partial_t \Psi(\vec{r},0) = V(\vec{r}).
+\end{equation}
+Because of simplicity, consider the restricted case whit the follow initial conditions
+\begin{equation}
+	\label{ReestrictedIntitialcondition}
+	\Psi(\vec{r},0) = 0, \ \ \ \partial_t \Psi(\vec{r},0) = V(\vec{r}).
+\end{equation}
+Writing the potential as a Fourier integral of the spatial component,
+\begin{equation}
+	\label{ScalarPotentialFT}
+	\Psi(\vec{r},t) = \int{\frac{d^3k}{(2\pi)^3}}\  \Psi_{\vec{k}}(t)e^{i\vec{k}\cdot\vec
+		r}
+\end{equation} 
+and identifying the differential operators in Fourier space as 
+\[\nabla \rightarrow i\vec{k},\]
+\[\nabla^{2} \rightarrow -k^{2},\] 
+the wave equation \ref{WEqScalarPotential} becomes into an algebraic one,
+\begin{equation}
+	\begin{split}\label{AlgebraicHWEforscalarpotential}
+		-k^2 \Psi_{\vec{k}}(t) -\frac{1}{c^2}\partial_t^2\Psi_{\vec{k}}(t) = 0, \\
+		 \Rightarrow \der{^2\Psi_{\vec{k}}(t)}{t^2} = - c^2k^2\Psi_{\vec{k}}(t),
+	\end{split}
 \end{equation}
 so we get a solution
-\begin{equation}
-\Psi_{\vec{k}}(t) = a_{\vec{k}} \cos (\omega_k t) + b_{\vec{k}} \sin (\omega_k t), \ \ \ \omega_k = kc
+\begin{equation}\label{GeneralSacalarPotentialForHWE}
+\Psi_{\vec{k}}(t) = a_{\vec{k}} \cos (\omega_k t) + b_{\vec{k}} \sin (\omega_k t), \ \ \ \omega_k = kc.
 \end{equation}
-The initial conditions in fourier space are
+
+Fourier transformation and implications of initial conditions are
 \begin{equation}
-	\Psi_{\vec{k}}(0) = 0 \Rightarrow a_{\vec{k}} = 0, \ \ \ \dt{\Psi_{\vec{k}}}(0) = V_{\vec{k}} = \integral{}{}{^3r} V(\vec{r})e^{-i\vec{k}\cdot\vec{r}} \Rightarrow  b_{\vec{k}} = \frac{V(\vec{k})}{kc}
+	\begin{split}
+		\Psi_{\vec{k}}(0) = 0 \Rightarrow a_{\vec{k}} = 0, \\ 
+		\ \dt{\Psi_{\vec{k}}}(0) = V_{\vec{k}} = \integral{}{}{^3r} V(\vec{r})e^{-i\vec{k}\cdot\vec{r}} \Rightarrow  b_{\vec{k}} = \frac{V(\vec{k})}{kc}
+	
+	\end{split}
 \end{equation}
 thus
 \begin{equation}
@@ -1117,7 +1144,8 @@ We replace the integral over $r'$ with $R$ so
 	\Psi(\vec{r},t) = \frac{t}{4\pi} \int d\hat{\Omega} \ V(\vec{r} + ct\hat{\Omega}) = t \langle V(\vec{r} + ct\hat{\Omega}) \rangle_{\hat{\Omega}}
 \end{equation}
 
-\textbf{General solution of the wave equation in 3d with initial conditions}\\
+\textbf{General solution of the wave equation in 3d with initial conditions}
+
 Suppose we have a function $\Psi$ satisfying the wave equation with initial conditions
 \begin{equation}
 	\Psi(\vec{r},0) = I(\vec{r}), \ \ \ \partial_t \Psi(\vec{r},0) = 0
@@ -1126,7 +1154,7 @@ If we define the function $\varphi(\vec{r},t) =t \langle I(\vec{r} + ct\hat{\Ome
 \begin{equation}
 	\varphi(\vec{r},0) = 0, \ \ \ \partial_t \Psi(\vec{r},0) = I(\vec{r})
 \end{equation}
-we verify that $\Psi(\vec{r},t) = \partial_t \varphi(\vec{r},t)$. Finally, if we have a function satifying the wave equation with generic initial conditions
+we verify that $\Psi(\vec{r},t) = \partial_t \varphi(\vec{r},t)$. Finally, if we have a function satisfying the wave equation with generic initial conditions
 \begin{equation}
 	\varphi(\vec{r},0) = I(\vec{r}), \ \ \ \partial_t \Psi(\vec{r},0) = V(\vec{r})
 \end{equation}
@@ -1187,7 +1215,75 @@ If $t>0$ we use Cauchy's theorem with a countour as in figure ...
 Then we get
 
 \begin{equation}
-	G(\vec{r},t) = -4\pi c^2 \int \frac{d^3k} {(2\pi)^3}\ e^{i\vec{k}\cdot\vec{r}} \frac{-2\pi i}{2\pi}\left[\frac{e^{-ikct}}{2kc}+ \frac{e^{ikct}}{-2kc}\right]
+	G(\vec{r},t) = -4\pi c^2 \int \frac{d^3k} {(2\pi)^3}\ e^{i\vec{k}\cdot\vec{r}} \frac{-2\pi i}{2\pi}\left[\frac{e^{-ikct}}{2kc}+ \frac{e^{ikct}}{-2kc}\right] = 4\pi c^2 \int \frac{d^3k}{(2\pi)^3}e^{i\vec{k}\cdot \vec{r}}\frac{\sin (kct)}{k}
 \end{equation}
-	
+Integrating over $k$ using spherical coordinates, and considering times $t>0$ we finally get
+\begin{equation}
+	G(\vec{r},t) = \frac{c}{r} \delta (r-ct) = \frac{1}{r} \delta (t-\frac{r}{c})
+\end{equation}
+Returning to the prevoius notation $t \to t-t'$ and $\vec{r}\to \vec{r} - \vec{r}\,'$
+\begin{equation}
+	G(\vec{r}-\vec{r}\,',t-t') = \frac{1}{|\vec{r}-\vec{r}\,'|} \delta (t-t_r)
+\end{equation}
+where $t_r = t-\frac{|\vec{r}-\vec{r}\,'|}{c}$ is the time light takes going from the source to the point of observation. The solution for the potentials in Lorenz gauge is then
+
+\begin{eqnarray}
+	\varphi(\vec{r},t) & = & \integral{}{}{^3r'} \frac{\rho (\vec{r}\,',t_r)}{|\vec{r} - \vec{r}\,'|} \\
+	\vec{A}(\vec{r},t) & = &\frac{1}{c} \integral{}{}{^3r'} \frac{\vec{j} (\vec{r}\,',t_r)}{|\vec{r} - \vec{r}\,'|}
+\end{eqnarray}
+
+\textbf{Cross section}\\
+Consider a plane wave with intensity $I_i$ [Power/Area] hits a molecule. The molecule will be polarized and will lose energy with power $P$. Only the light that hit the molecule will be scatterd so we define the effective size of the molecule called the cross section given by
+\begin{equation}
+	 \sigma = \frac{P}{I_i}
+\end{equation}
+
+\textbf{Mean free path}\\
+
+\textbf{Why the sky is blue?}\\
+Supppose a molecule of the atmosphere is hit by monochromatic light from the sun with intensity $I=\frac{c}{8\pi}|E|^2$. This molecule will polarize in the direction of the electric field $\vec{p}=\alpha \vec{E}$. This will lead the molecule to oscillate with a frequency $\omega$ equal to frequency of the incident light. Therefore it will lose energy
+\begin{equation}
+	P = \frac{\omega^4}{3c^3}|p|^2 = \frac{\omega^4}{3c^3} |\alpha|^2 |E|^2
+\end{equation}
+
+\textbf{Antenna}\\
+Consider a current source $I(t) = I_0 \cos (\omega t)$ conected to two metal rods of length $L/2$ as in figure ... to form an antenna. Let $I(z,t)$ be the current in the antenna. The current between the two rods at $z = 0$ is equal to the current from the source, and at $z=\pm L/2$ is zero since there the wires end
+\begin{equation}
+	I(0,t) = I(t) = I_0 \cos(\omega t), \ \ \  I(\pm L/2,t) = 0
+\end{equation}
+We make an ansazts of the form of the current that satisfies this behaviour
+\begin{equation}
+	I(z,t) = I_0\cos(\omega t) \cos\left(\pi \frac{z}{L}\right)
+\end{equation}
+This form of $I$ tells us that at fixed time the lower part, at $z<0$, of the antenna has the opposite charge of the upper half, at $z>0$, so it forms a dipole in one dimension
+\begin{equation}
+	p_z(t) = \integral{}{}{z} \lambda (z,t) z
+\end{equation}
+where $\lambda (z,t)$ is the charge density in one dimension, which satisfy the continuity equation in one dimension
+\begin{equation}
+	\pd{\lambda}{t}+\pd{I}{z} = 0
+\end{equation}
+so $\lambda (z,t) = \frac{\pi I_0}{\omega L}\sin(\omega t)\sin(\frac{\pi}{L}z)$. Therefore the instantaneous electric dipole moment is
+\begin{equation}
+	p_z(t) = \frac{2I_0L}{\omega\pi}\sin(\omega t) = \re (p_z e^{i\omega t})
+\end{equation}
+so the amplitude of the dipole is $p_z = \frac{2I_0L}{\omega\pi}i$. And
+\begin{equation}
+	\vec{p} = \frac{2I_0L}{\omega\pi}i(0,0,1)
+\end{equation}
+This vector and not the instantaneous is what we need to replace in Larmor's formula to get the power loss
+\begin{equation}
+	P = \frac{\omega^4}{3c^3}|\vec{p}\,|^2 = \frac{4\omega^2L^2}{3c^3\pi^2}I_0^2
+\end{equation}
+assuming of course $\lambda\gg L$. In an oscillating electrical circuit the power loss is
+\begin{equation}
+	P = \langle V I \rangle = \langle R I^2(t)\rangle = \frac{1}{2}R I_0^2
+\end{equation}
+So, in the perspective of an electrical circuit we can describe the antenna as a resistor with resistance 
+\begin{equation}
+R_{\text{rad}} = \frac{8\omega^2L^2}{3\pi^2c^3}
+\end{equation}
+
+
+
 \end{document}
